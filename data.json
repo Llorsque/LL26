@@ -1,0 +1,2270 @@
+{
+  "event": {
+    "name": "LOOP Leeuwarden",
+    "edition": "19e editie",
+    "date": "2026-05-10",
+    "status": "concept",
+    "definitief_per": null,
+    "tagline": "Hét hardloop- en wandelevenement van Fryslân",
+    "beschrijving": "LOOP Leeuwarden is hét hardloop- en wandelevenement van Fryslân, midden in het hart van de stad. Het evenement combineert sport, sfeer en de mooiste routes door en rondom Leeuwarden. Deelnemers kunnen kiezen uit meerdere afstanden hardlopen (5 km, 10 km, halve marathon) en wandelen (6, 12, 18 km). Voor de jongste lopers is er de grootste gratis Kidsrun van Nederland en bedrijven gaan de uitdaging aan in de Bentacera Business LOOP. Alle routes starten en finishen in de binnenstad, met de Oldehove als iconisch eindpunt.",
+    "cijfers": {
+      "editie_nummer": 19,
+      "deelnemers_indicatie": "10.000+",
+      "aantal_afstanden": 8
+    },
+    "organisatie": {
+      "naam": "Stichting Gezonde Stad Leeuwarden",
+      "contactpersoon": "",
+      "telefoon": "",
+      "email": "",
+      "beschrijving": "Stichting Gezonde Stad Leeuwarden richt zich op de vitaliteit en fitheid van inwoners van Friesland. Doel: zoveel mogelijk mensen in beweging krijgen en bijdragen aan een gezonde levensstijl. Meedoen is belangrijker dan winnen."
+    },
+    "communicatie": {
+      "portofoon_kanalen": [
+        {
+          "kanaal": 1,
+          "naam": "Regie",
+          "gebruikers": []
+        },
+        {
+          "kanaal": 2,
+          "naam": "Entertainment",
+          "gebruikers": []
+        }
+      ],
+      "whatsapp_groepen": []
+    },
+    "noodcontacten": []
+  },
+  "afstanden": [
+    {
+      "id": "kidsrun_1km",
+      "naam": "Z8 Kidsrun 1 km",
+      "afstand_km": 1.0,
+      "discipline": "kidsrun",
+      "leeftijd": "4-8 jaar",
+      "starttijd": "09:00",
+      "starttijd_einde": null,
+      "huldiging_starttijd": null,
+      "start_locatie": "huldigingspodium_oldehoofsterkerkhof",
+      "finish_locatie": "huldigingspodium_oldehoofsterkerkhof",
+      "aantal_waves": 3,
+      "sponsors": [
+        "z8"
+      ],
+      "klassementen": []
+    },
+    {
+      "id": "halve_marathon",
+      "naam": "Dewulf Halve Marathon",
+      "afstand_km": 21.1,
+      "discipline": "hardlopen",
+      "starttijd": "09:30",
+      "starttijd_einde": null,
+      "huldiging_starttijd": null,
+      "start_locatie": "start_wilhelminaplein",
+      "finish_locatie": "finish_hardlopen_groeneweg",
+      "aantal_waves": 5,
+      "sponsors": [
+        "dewulf"
+      ],
+      "klassementen": []
+    },
+    {
+      "id": "kidsrun_2_5km",
+      "naam": "Ausnutria Kidsrun 2,5 km",
+      "afstand_km": 2.5,
+      "discipline": "kidsrun",
+      "leeftijd": "9-12 jaar",
+      "starttijd": "10:00",
+      "starttijd_einde": null,
+      "huldiging_starttijd": null,
+      "start_locatie": "huldigingspodium_oldehoofsterkerkhof",
+      "finish_locatie": "huldigingspodium_oldehoofsterkerkhof",
+      "aantal_waves": 2,
+      "sponsors": [
+        "ausnutria"
+      ],
+      "klassementen": []
+    },
+    {
+      "id": "wandelen_18km",
+      "naam": "P. de Vries Wandeltocht 18 km",
+      "afstand_km": 18.0,
+      "discipline": "wandelen",
+      "starttijd": "10:00",
+      "starttijd_einde": "11:00",
+      "huldiging_starttijd": null,
+      "start_locatie": "start_wilhelminaplein",
+      "finish_locatie": "finish_wandelen_oldehoofsterkerkhof",
+      "aantal_waves": null,
+      "sponsors": [
+        "p_de_vries"
+      ],
+      "klassementen": []
+    },
+    {
+      "id": "wandelen_12km",
+      "naam": "Sportcentrum URSUS Wandeltocht 12 km",
+      "afstand_km": 12.0,
+      "discipline": "wandelen",
+      "starttijd": "10:30",
+      "starttijd_einde": "11:30",
+      "huldiging_starttijd": null,
+      "start_locatie": "start_wilhelminaplein",
+      "finish_locatie": "finish_wandelen_oldehoofsterkerkhof",
+      "aantal_waves": null,
+      "sponsors": [
+        "sportcentrum_ursus"
+      ],
+      "klassementen": []
+    },
+    {
+      "id": "wandelen_6km",
+      "naam": "Hanwag Wandeltocht 6 km",
+      "afstand_km": 6.0,
+      "discipline": "wandelen",
+      "starttijd": "11:00",
+      "starttijd_einde": "12:00",
+      "huldiging_starttijd": null,
+      "start_locatie": "start_wilhelminaplein",
+      "finish_locatie": "finish_wandelen_oldehoofsterkerkhof",
+      "aantal_waves": null,
+      "sponsors": [
+        "hanwag"
+      ],
+      "klassementen": []
+    },
+    {
+      "id": "hardlopen_5km",
+      "naam": "Garmin 5 km",
+      "afstand_km": 5.0,
+      "discipline": "hardlopen",
+      "starttijd": "12:30",
+      "starttijd_einde": null,
+      "huldiging_starttijd": null,
+      "start_locatie": "start_wilhelminaplein",
+      "finish_locatie": "finish_hardlopen_groeneweg",
+      "aantal_waves": 6,
+      "sponsors": [
+        "garmin"
+      ],
+      "klassementen": [
+        "bentacera_business_loop"
+      ]
+    },
+    {
+      "id": "hardlopen_10km",
+      "naam": "Intersport LUXEN 10 km",
+      "afstand_km": 10.0,
+      "discipline": "hardlopen",
+      "starttijd": "13:30",
+      "starttijd_einde": null,
+      "huldiging_starttijd": null,
+      "start_locatie": "start_wilhelminaplein",
+      "finish_locatie": "finish_hardlopen_groeneweg",
+      "aantal_waves": 6,
+      "sponsors": [
+        "intersport_luxen"
+      ],
+      "klassementen": [
+        "bentacera_business_loop",
+        "leeuwarden_student_city"
+      ]
+    }
+  ],
+  "locaties": [
+    {
+      "id": "start_wilhelminaplein",
+      "naam": "Start",
+      "locatie_naam": "Wilhelminaplein/Zaailand",
+      "adres": "",
+      "area": null,
+      "type": "start",
+      "vaste_bezetting": {
+        "host": null,
+        "dj": null,
+        "av": null
+      },
+      "techniek": {
+        "pa": true,
+        "ledscherm": true,
+        "microfoons": 2,
+        "stroom": "",
+        "wifi": false
+      },
+      "praktisch": {
+        "parkeren": "",
+        "laden_lossen": "",
+        "toilet_dichtstbij": "",
+        "ehbo": ""
+      },
+      "sponsoren_zichtbaar": []
+    },
+    {
+      "id": "garmin_cheerzone",
+      "naam": "Garmin Cheerzone",
+      "locatie_naam": "Noorderbrug",
+      "adres": "",
+      "area": null,
+      "type": "cheerzone",
+      "vaste_bezetting": {
+        "host": null,
+        "dj": null,
+        "av": null
+      },
+      "techniek": {
+        "pa": true,
+        "ledscherm": false,
+        "microfoons": 1,
+        "stroom": "",
+        "wifi": false
+      },
+      "praktisch": {
+        "parkeren": "",
+        "laden_lossen": "",
+        "toilet_dichtstbij": "",
+        "ehbo": ""
+      },
+      "sponsoren_zichtbaar": [
+        "garmin"
+      ]
+    },
+    {
+      "id": "vp2_havankpark",
+      "naam": "Verzorgingspost 2 (VP2)",
+      "locatie_naam": "Havankpark",
+      "adres": "",
+      "area": null,
+      "type": "verzorgingspost",
+      "vaste_bezetting": {
+        "host": null,
+        "dj": null,
+        "av": null
+      },
+      "techniek": {
+        "pa": true,
+        "ledscherm": false,
+        "microfoons": 1,
+        "stroom": "",
+        "wifi": false
+      },
+      "praktisch": {
+        "parkeren": "",
+        "laden_lossen": "",
+        "toilet_dichtstbij": "",
+        "ehbo": ""
+      },
+      "sponsoren_zichtbaar": []
+    },
+    {
+      "id": "vp3_rengerspark",
+      "naam": "Verzorgingspost 3 (VP3)",
+      "locatie_naam": "Rengerspark",
+      "adres": "",
+      "area": null,
+      "type": "verzorgingspost",
+      "vaste_bezetting": {
+        "host": null,
+        "dj": null,
+        "av": null
+      },
+      "techniek": {
+        "pa": true,
+        "ledscherm": false,
+        "microfoons": 1,
+        "stroom": "",
+        "wifi": false
+      },
+      "praktisch": {
+        "parkeren": "",
+        "laden_lossen": "",
+        "toilet_dichtstbij": "",
+        "ehbo": ""
+      },
+      "sponsoren_zichtbaar": []
+    },
+    {
+      "id": "finish_hardlopen_groeneweg",
+      "naam": "Finish Hardlopen",
+      "locatie_naam": "Groeneweg",
+      "adres": "",
+      "area": null,
+      "type": "finish",
+      "vaste_bezetting": {
+        "host": null,
+        "dj": null,
+        "av": null
+      },
+      "techniek": {
+        "pa": true,
+        "ledscherm": true,
+        "microfoons": 2,
+        "stroom": "",
+        "wifi": false
+      },
+      "praktisch": {
+        "parkeren": "",
+        "laden_lossen": "",
+        "toilet_dichtstbij": "",
+        "ehbo": ""
+      },
+      "sponsoren_zichtbaar": []
+    },
+    {
+      "id": "finish_wandelen_oldehoofsterkerkhof",
+      "naam": "Finish Wandelen",
+      "locatie_naam": "Oldehoofsterkerkhof",
+      "adres": "",
+      "area": "oldehoofsterkerkhof",
+      "type": "finish",
+      "vaste_bezetting": {
+        "host": null,
+        "dj": null,
+        "av": null
+      },
+      "techniek": {
+        "pa": true,
+        "ledscherm": false,
+        "microfoons": 2,
+        "stroom": "",
+        "wifi": false
+      },
+      "praktisch": {
+        "parkeren": "",
+        "laden_lossen": "",
+        "toilet_dichtstbij": "",
+        "ehbo": ""
+      },
+      "sponsoren_zichtbaar": []
+    },
+    {
+      "id": "huldigingspodium_oldehoofsterkerkhof",
+      "naam": "Huldigingspodium",
+      "locatie_naam": "Oldehoofsterkerkhof",
+      "adres": "",
+      "area": "oldehoofsterkerkhof",
+      "type": "huldiging",
+      "vaste_bezetting": {
+        "host": null,
+        "dj": null,
+        "av": null
+      },
+      "techniek": {
+        "pa": true,
+        "ledscherm": true,
+        "microfoons": 2,
+        "stroom": "",
+        "wifi": false
+      },
+      "praktisch": {
+        "parkeren": "",
+        "laden_lossen": "",
+        "toilet_dichtstbij": "",
+        "ehbo": ""
+      },
+      "sponsoren_zichtbaar": []
+    }
+  ],
+  "sponsors": [
+    {
+      "id": "z8",
+      "naam": "Z8",
+      "niveau": "sponsor",
+      "sinds_jaar": null,
+      "logo_bestand": "",
+      "contact": {
+        "intern_organisatie": "",
+        "bij_sponsor": ""
+      },
+      "vermeldingstekst_woordelijk": "",
+      "aantal_vermeldingen_per_dag": 0,
+      "gekoppelde_afstanden": [
+        "kidsrun_1km"
+      ],
+      "locaties_zichtbaar": [],
+      "activatie": {
+        "heeft_stand": false,
+        "heeft_moment_in_programma": false,
+        "beschrijving": ""
+      }
+    },
+    {
+      "id": "dewulf",
+      "naam": "Dewulf",
+      "niveau": "sponsor",
+      "sinds_jaar": null,
+      "logo_bestand": "",
+      "contact": {
+        "intern_organisatie": "",
+        "bij_sponsor": ""
+      },
+      "vermeldingstekst_woordelijk": "",
+      "aantal_vermeldingen_per_dag": 0,
+      "gekoppelde_afstanden": [
+        "halve_marathon"
+      ],
+      "locaties_zichtbaar": [],
+      "activatie": {
+        "heeft_stand": false,
+        "heeft_moment_in_programma": false,
+        "beschrijving": ""
+      }
+    },
+    {
+      "id": "ausnutria",
+      "naam": "Ausnutria",
+      "niveau": "sponsor",
+      "sinds_jaar": null,
+      "logo_bestand": "",
+      "contact": {
+        "intern_organisatie": "",
+        "bij_sponsor": ""
+      },
+      "vermeldingstekst_woordelijk": "",
+      "aantal_vermeldingen_per_dag": 0,
+      "gekoppelde_afstanden": [
+        "kidsrun_2_5km"
+      ],
+      "locaties_zichtbaar": [],
+      "activatie": {
+        "heeft_stand": false,
+        "heeft_moment_in_programma": false,
+        "beschrijving": ""
+      }
+    },
+    {
+      "id": "p_de_vries",
+      "naam": "P. de Vries",
+      "niveau": "sponsor",
+      "sinds_jaar": null,
+      "logo_bestand": "",
+      "contact": {
+        "intern_organisatie": "",
+        "bij_sponsor": ""
+      },
+      "vermeldingstekst_woordelijk": "",
+      "aantal_vermeldingen_per_dag": 0,
+      "gekoppelde_afstanden": [
+        "wandelen_18km"
+      ],
+      "locaties_zichtbaar": [],
+      "activatie": {
+        "heeft_stand": false,
+        "heeft_moment_in_programma": false,
+        "beschrijving": ""
+      }
+    },
+    {
+      "id": "sportcentrum_ursus",
+      "naam": "Sportcentrum URSUS",
+      "niveau": "sponsor",
+      "sinds_jaar": null,
+      "logo_bestand": "",
+      "contact": {
+        "intern_organisatie": "",
+        "bij_sponsor": ""
+      },
+      "vermeldingstekst_woordelijk": "",
+      "aantal_vermeldingen_per_dag": 0,
+      "gekoppelde_afstanden": [
+        "wandelen_12km"
+      ],
+      "locaties_zichtbaar": [],
+      "activatie": {
+        "heeft_stand": false,
+        "heeft_moment_in_programma": false,
+        "beschrijving": ""
+      }
+    },
+    {
+      "id": "hanwag",
+      "naam": "Hanwag",
+      "niveau": "sponsor",
+      "sinds_jaar": null,
+      "logo_bestand": "",
+      "contact": {
+        "intern_organisatie": "",
+        "bij_sponsor": ""
+      },
+      "vermeldingstekst_woordelijk": "",
+      "aantal_vermeldingen_per_dag": 0,
+      "gekoppelde_afstanden": [
+        "wandelen_6km"
+      ],
+      "locaties_zichtbaar": [],
+      "activatie": {
+        "heeft_stand": false,
+        "heeft_moment_in_programma": false,
+        "beschrijving": ""
+      }
+    },
+    {
+      "id": "garmin",
+      "naam": "Garmin",
+      "niveau": "sponsor",
+      "sinds_jaar": null,
+      "logo_bestand": "",
+      "contact": {
+        "intern_organisatie": "",
+        "bij_sponsor": ""
+      },
+      "vermeldingstekst_woordelijk": "",
+      "aantal_vermeldingen_per_dag": 0,
+      "gekoppelde_afstanden": [
+        "hardlopen_5km"
+      ],
+      "locaties_zichtbaar": [
+        "garmin_cheerzone"
+      ],
+      "activatie": {
+        "heeft_stand": true,
+        "heeft_moment_in_programma": false,
+        "beschrijving": "Cheerzone op Noorderbrug op naam van Garmin"
+      }
+    },
+    {
+      "id": "intersport_luxen",
+      "naam": "Intersport LUXEN",
+      "niveau": "sponsor",
+      "sinds_jaar": null,
+      "logo_bestand": "",
+      "contact": {
+        "intern_organisatie": "",
+        "bij_sponsor": ""
+      },
+      "vermeldingstekst_woordelijk": "",
+      "aantal_vermeldingen_per_dag": 0,
+      "gekoppelde_afstanden": [
+        "hardlopen_10km"
+      ],
+      "locaties_zichtbaar": [],
+      "activatie": {
+        "heeft_stand": false,
+        "heeft_moment_in_programma": false,
+        "beschrijving": ""
+      }
+    }
+  ],
+  "klassementen": [
+    {
+      "id": "bentacera_business_loop",
+      "naam": "Bentacera Business LOOP",
+      "type": "bedrijven",
+      "sponsor": "bentacera",
+      "gekoppelde_afstanden": [
+        "hardlopen_5km",
+        "hardlopen_10km"
+      ],
+      "specifieke_waves": null,
+      "beschrijving": "Bedrijven gaan de uitdaging met elkaar aan in de Bentacera Business LOOP.",
+      "heeft_eigen_huldiging": true,
+      "huldiging_starttijd": null
+    },
+    {
+      "id": "leeuwarden_student_city",
+      "naam": "Leeuwarden Student City",
+      "type": "studenten",
+      "sponsor": "leeuwarden_student_city",
+      "gekoppelde_afstanden": [
+        "hardlopen_10km"
+      ],
+      "specifieke_waves": [
+        2
+      ],
+      "beschrijving": "Studentenrun van Leeuwarden Student City — wave 2 van de 10 km.",
+      "heeft_eigen_huldiging": true,
+      "huldiging_starttijd": null
+    }
+  ],
+  "schedule": [],
+  "doorkomsten": {
+    "halve_marathon": [
+      {
+        "wave": 1,
+        "km": 1,
+        "snelste": "0:03:19",
+        "langzaamste": "0:05:00",
+        "eerste": "9:33",
+        "laatste": "9:35"
+      },
+      {
+        "wave": 1,
+        "km": 2,
+        "snelste": "0:06:38",
+        "langzaamste": "0:10:00",
+        "eerste": "9:36",
+        "laatste": "9:40"
+      },
+      {
+        "wave": 1,
+        "km": 3,
+        "snelste": "0:09:57",
+        "langzaamste": "0:15:00",
+        "eerste": "9:39",
+        "laatste": "9:45"
+      },
+      {
+        "wave": 1,
+        "km": 4,
+        "snelste": "0:13:16",
+        "langzaamste": "0:20:00",
+        "eerste": "9:43",
+        "laatste": "9:50"
+      },
+      {
+        "wave": 1,
+        "km": 5,
+        "snelste": "0:16:35",
+        "langzaamste": "0:25:00",
+        "eerste": "9:46",
+        "laatste": "9:55"
+      },
+      {
+        "wave": 1,
+        "km": 6,
+        "snelste": "0:19:54",
+        "langzaamste": "0:30:00",
+        "eerste": "9:49",
+        "laatste": "10:00"
+      },
+      {
+        "wave": 1,
+        "km": 7,
+        "snelste": "0:23:13",
+        "langzaamste": "0:35:00",
+        "eerste": "9:53",
+        "laatste": "10:05"
+      },
+      {
+        "wave": 1,
+        "km": 8,
+        "snelste": "0:26:32",
+        "langzaamste": "0:40:00",
+        "eerste": "9:56",
+        "laatste": "10:10"
+      },
+      {
+        "wave": 1,
+        "km": 9,
+        "snelste": "0:29:51",
+        "langzaamste": "0:45:00",
+        "eerste": "9:59",
+        "laatste": "10:15"
+      },
+      {
+        "wave": 1,
+        "km": 10,
+        "snelste": "0:33:10",
+        "langzaamste": "0:50:00",
+        "eerste": "10:03",
+        "laatste": "10:20"
+      },
+      {
+        "wave": 1,
+        "km": 11,
+        "snelste": "0:36:29",
+        "langzaamste": "0:55:00",
+        "eerste": "10:06",
+        "laatste": "10:25"
+      },
+      {
+        "wave": 1,
+        "km": 12,
+        "snelste": "0:39:48",
+        "langzaamste": "1:00:00",
+        "eerste": "10:09",
+        "laatste": "10:30"
+      },
+      {
+        "wave": 1,
+        "km": 13,
+        "snelste": "0:43:07",
+        "langzaamste": "1:05:00",
+        "eerste": "10:13",
+        "laatste": "10:35"
+      },
+      {
+        "wave": 1,
+        "km": 14,
+        "snelste": "0:46:26",
+        "langzaamste": "1:10:00",
+        "eerste": "10:16",
+        "laatste": "10:40"
+      },
+      {
+        "wave": 1,
+        "km": 15,
+        "snelste": "0:49:45",
+        "langzaamste": "1:15:00",
+        "eerste": "10:19",
+        "laatste": "10:45"
+      },
+      {
+        "wave": 1,
+        "km": 16,
+        "snelste": "0:53:04",
+        "langzaamste": "1:20:00",
+        "eerste": "10:23",
+        "laatste": "10:50"
+      },
+      {
+        "wave": 1,
+        "km": 17,
+        "snelste": "0:56:23",
+        "langzaamste": "1:25:00",
+        "eerste": "10:26",
+        "laatste": "10:55"
+      },
+      {
+        "wave": 1,
+        "km": 18,
+        "snelste": "0:59:42",
+        "langzaamste": "1:30:00",
+        "eerste": "10:29",
+        "laatste": "11:00"
+      },
+      {
+        "wave": 1,
+        "km": 19,
+        "snelste": "1:03:01",
+        "langzaamste": "1:35:00",
+        "eerste": "10:33",
+        "laatste": "11:05"
+      },
+      {
+        "wave": 1,
+        "km": 20,
+        "snelste": "1:06:20",
+        "langzaamste": "1:40:00",
+        "eerste": "10:36",
+        "laatste": "11:10"
+      },
+      {
+        "wave": 1,
+        "km": 21,
+        "snelste": "1:09:39",
+        "langzaamste": "1:45:00",
+        "eerste": "10:39",
+        "laatste": "11:15"
+      },
+      {
+        "wave": 1,
+        "km": 21.1,
+        "snelste": "1:09:58",
+        "langzaamste": "1:45:29",
+        "eerste": "10:39",
+        "laatste": "11:15"
+      },
+      {
+        "wave": 2,
+        "km": 1,
+        "snelste": "0:04:45",
+        "langzaamste": "0:06:00",
+        "eerste": "9:37",
+        "laatste": "9:39"
+      },
+      {
+        "wave": 2,
+        "km": 2,
+        "snelste": "0:09:30",
+        "langzaamste": "0:12:00",
+        "eerste": "9:42",
+        "laatste": "9:45"
+      },
+      {
+        "wave": 2,
+        "km": 3,
+        "snelste": "0:14:15",
+        "langzaamste": "0:18:00",
+        "eerste": "9:47",
+        "laatste": "9:51"
+      },
+      {
+        "wave": 2,
+        "km": 4,
+        "snelste": "0:19:00",
+        "langzaamste": "0:24:00",
+        "eerste": "9:52",
+        "laatste": "9:57"
+      },
+      {
+        "wave": 2,
+        "km": 5,
+        "snelste": "0:23:45",
+        "langzaamste": "0:30:00",
+        "eerste": "9:56",
+        "laatste": "10:03"
+      },
+      {
+        "wave": 2,
+        "km": 6,
+        "snelste": "0:28:30",
+        "langzaamste": "0:36:00",
+        "eerste": "10:01",
+        "laatste": "10:09"
+      },
+      {
+        "wave": 2,
+        "km": 7,
+        "snelste": "0:33:15",
+        "langzaamste": "0:42:00",
+        "eerste": "10:06",
+        "laatste": "10:15"
+      },
+      {
+        "wave": 2,
+        "km": 8,
+        "snelste": "0:38:00",
+        "langzaamste": "0:48:00",
+        "eerste": "10:11",
+        "laatste": "10:21"
+      },
+      {
+        "wave": 2,
+        "km": 9,
+        "snelste": "0:42:45",
+        "langzaamste": "0:54:00",
+        "eerste": "10:15",
+        "laatste": "10:27"
+      },
+      {
+        "wave": 2,
+        "km": 10,
+        "snelste": "0:47:30",
+        "langzaamste": "1:00:00",
+        "eerste": "10:20",
+        "laatste": "10:33"
+      },
+      {
+        "wave": 2,
+        "km": 11,
+        "snelste": "0:52:15",
+        "langzaamste": "1:06:00",
+        "eerste": "10:25",
+        "laatste": "10:39"
+      },
+      {
+        "wave": 2,
+        "km": 12,
+        "snelste": "0:57:00",
+        "langzaamste": "1:12:00",
+        "eerste": "10:30",
+        "laatste": "10:45"
+      },
+      {
+        "wave": 2,
+        "km": 13,
+        "snelste": "1:01:45",
+        "langzaamste": "1:18:00",
+        "eerste": "10:34",
+        "laatste": "10:51"
+      },
+      {
+        "wave": 2,
+        "km": 14,
+        "snelste": "1:06:30",
+        "langzaamste": "1:24:00",
+        "eerste": "10:39",
+        "laatste": "10:57"
+      },
+      {
+        "wave": 2,
+        "km": 15,
+        "snelste": "1:11:15",
+        "langzaamste": "1:30:00",
+        "eerste": "10:44",
+        "laatste": "11:03"
+      },
+      {
+        "wave": 2,
+        "km": 16,
+        "snelste": "1:16:00",
+        "langzaamste": "1:36:00",
+        "eerste": "10:49",
+        "laatste": "11:09"
+      },
+      {
+        "wave": 2,
+        "km": 17,
+        "snelste": "1:20:45",
+        "langzaamste": "1:42:00",
+        "eerste": "10:53",
+        "laatste": "11:15"
+      },
+      {
+        "wave": 2,
+        "km": 18,
+        "snelste": "1:25:30",
+        "langzaamste": "1:48:00",
+        "eerste": "10:58",
+        "laatste": "11:21"
+      },
+      {
+        "wave": 2,
+        "km": 19,
+        "snelste": "1:30:15",
+        "langzaamste": "1:54:00",
+        "eerste": "11:03",
+        "laatste": "11:27"
+      },
+      {
+        "wave": 2,
+        "km": 20,
+        "snelste": "1:35:00",
+        "langzaamste": "2:00:00",
+        "eerste": "11:08",
+        "laatste": "11:33"
+      },
+      {
+        "wave": 2,
+        "km": 21,
+        "snelste": "1:39:45",
+        "langzaamste": "2:06:00",
+        "eerste": "11:12",
+        "laatste": "11:39"
+      },
+      {
+        "wave": 2,
+        "km": 21.1,
+        "snelste": "1:40:13",
+        "langzaamste": "2:06:35",
+        "eerste": "11:13",
+        "laatste": "11:39"
+      },
+      {
+        "wave": 3,
+        "km": 1,
+        "snelste": "0:05:45",
+        "langzaamste": "0:07:15",
+        "eerste": "9:41",
+        "laatste": "9:43"
+      },
+      {
+        "wave": 3,
+        "km": 2,
+        "snelste": "0:11:30",
+        "langzaamste": "0:14:30",
+        "eerste": "9:47",
+        "laatste": "9:50"
+      },
+      {
+        "wave": 3,
+        "km": 3,
+        "snelste": "0:17:15",
+        "langzaamste": "0:21:45",
+        "eerste": "9:53",
+        "laatste": "9:57"
+      },
+      {
+        "wave": 3,
+        "km": 4,
+        "snelste": "0:23:00",
+        "langzaamste": "0:29:00",
+        "eerste": "9:59",
+        "laatste": "10:05"
+      },
+      {
+        "wave": 3,
+        "km": 5,
+        "snelste": "0:28:45",
+        "langzaamste": "0:36:15",
+        "eerste": "10:04",
+        "laatste": "10:12"
+      },
+      {
+        "wave": 3,
+        "km": 6,
+        "snelste": "0:34:30",
+        "langzaamste": "0:43:30",
+        "eerste": "10:10",
+        "laatste": "10:19"
+      },
+      {
+        "wave": 3,
+        "km": 7,
+        "snelste": "0:40:15",
+        "langzaamste": "0:50:45",
+        "eerste": "10:16",
+        "laatste": "10:26"
+      },
+      {
+        "wave": 3,
+        "km": 8,
+        "snelste": "0:46:00",
+        "langzaamste": "0:58:00",
+        "eerste": "10:22",
+        "laatste": "10:34"
+      },
+      {
+        "wave": 3,
+        "km": 9,
+        "snelste": "0:51:45",
+        "langzaamste": "1:05:15",
+        "eerste": "10:27",
+        "laatste": "10:41"
+      },
+      {
+        "wave": 3,
+        "km": 10,
+        "snelste": "0:57:30",
+        "langzaamste": "1:12:30",
+        "eerste": "10:33",
+        "laatste": "10:48"
+      },
+      {
+        "wave": 3,
+        "km": 11,
+        "snelste": "1:03:15",
+        "langzaamste": "1:19:00",
+        "eerste": "10:39",
+        "laatste": "10:55"
+      },
+      {
+        "wave": 3,
+        "km": 12,
+        "snelste": "1:09:00",
+        "langzaamste": "1:27:00",
+        "eerste": "10:45",
+        "laatste": "11:03"
+      },
+      {
+        "wave": 3,
+        "km": 13,
+        "snelste": "1:14:45",
+        "langzaamste": "1:34:15",
+        "eerste": "10:50",
+        "laatste": "11:10"
+      },
+      {
+        "wave": 3,
+        "km": 14,
+        "snelste": "1:20:30",
+        "langzaamste": "1:41:30",
+        "eerste": "10:56",
+        "laatste": "11:17"
+      },
+      {
+        "wave": 3,
+        "km": 15,
+        "snelste": "1:26:15",
+        "langzaamste": "1:48:45",
+        "eerste": "11:02",
+        "laatste": "11:24"
+      },
+      {
+        "wave": 3,
+        "km": 16,
+        "snelste": "1:32:00",
+        "langzaamste": "1:56:00",
+        "eerste": "11:08",
+        "laatste": "11:32"
+      },
+      {
+        "wave": 3,
+        "km": 17,
+        "snelste": "1:37:45",
+        "langzaamste": "2:03:15",
+        "eerste": "11:13",
+        "laatste": "11:39"
+      },
+      {
+        "wave": 3,
+        "km": 18,
+        "snelste": "1:43:30",
+        "langzaamste": "2:10:30",
+        "eerste": "11:19",
+        "laatste": "11:46"
+      },
+      {
+        "wave": 3,
+        "km": 19,
+        "snelste": "1:49:15",
+        "langzaamste": "2:17:45",
+        "eerste": "11:25",
+        "laatste": "11:53"
+      },
+      {
+        "wave": 3,
+        "km": 20,
+        "snelste": "1:55:00",
+        "langzaamste": "2:25:00",
+        "eerste": "11:31",
+        "laatste": "12:01"
+      },
+      {
+        "wave": 3,
+        "km": 21,
+        "snelste": "2:00:45",
+        "langzaamste": "2:32:15",
+        "eerste": "11:36",
+        "laatste": "12:08"
+      },
+      {
+        "wave": 3,
+        "km": 21.1,
+        "snelste": "2:01:18",
+        "langzaamste": "2:32:57",
+        "eerste": "11:37",
+        "laatste": "12:08"
+      },
+      {
+        "wave": 4,
+        "km": 1,
+        "snelste": "0:07:00",
+        "langzaamste": "0:08:30",
+        "eerste": "9:46",
+        "laatste": "9:47"
+      },
+      {
+        "wave": 4,
+        "km": 2,
+        "snelste": "0:14:00",
+        "langzaamste": "0:17:00",
+        "eerste": "9:53",
+        "laatste": "9:56"
+      },
+      {
+        "wave": 4,
+        "km": 3,
+        "snelste": "0:21:00",
+        "langzaamste": "0:25:30",
+        "eerste": "10:00",
+        "laatste": "10:04"
+      },
+      {
+        "wave": 4,
+        "km": 4,
+        "snelste": "0:28:00",
+        "langzaamste": "0:34:00",
+        "eerste": "10:07",
+        "laatste": "10:13"
+      },
+      {
+        "wave": 4,
+        "km": 5,
+        "snelste": "0:35:00",
+        "langzaamste": "0:42:30",
+        "eerste": "10:14",
+        "laatste": "10:21"
+      },
+      {
+        "wave": 4,
+        "km": 6,
+        "snelste": "0:42:00",
+        "langzaamste": "0:51:00",
+        "eerste": "10:21",
+        "laatste": "10:30"
+      },
+      {
+        "wave": 4,
+        "km": 7,
+        "snelste": "0:49:00",
+        "langzaamste": "0:59:30",
+        "eerste": "10:28",
+        "laatste": "10:38"
+      },
+      {
+        "wave": 4,
+        "km": 8,
+        "snelste": "0:56:00",
+        "langzaamste": "1:08:00",
+        "eerste": "10:35",
+        "laatste": "10:47"
+      },
+      {
+        "wave": 4,
+        "km": 9,
+        "snelste": "1:03:00",
+        "langzaamste": "1:16:30",
+        "eerste": "10:42",
+        "laatste": "10:55"
+      },
+      {
+        "wave": 4,
+        "km": 10,
+        "snelste": "1:10:00",
+        "langzaamste": "1:25:00",
+        "eerste": "10:49",
+        "laatste": "11:04"
+      },
+      {
+        "wave": 4,
+        "km": 11,
+        "snelste": "1:17:00",
+        "langzaamste": "1:33:00",
+        "eerste": "10:56",
+        "laatste": "11:12"
+      },
+      {
+        "wave": 4,
+        "km": 12,
+        "snelste": "1:24:00",
+        "langzaamste": "1:42:00",
+        "eerste": "11:03",
+        "laatste": "11:21"
+      },
+      {
+        "wave": 4,
+        "km": 13,
+        "snelste": "1:31:00",
+        "langzaamste": "1:50:30",
+        "eerste": "11:10",
+        "laatste": "11:29"
+      },
+      {
+        "wave": 4,
+        "km": 14,
+        "snelste": "1:38:00",
+        "langzaamste": "1:59:00",
+        "eerste": "11:17",
+        "laatste": "11:38"
+      },
+      {
+        "wave": 4,
+        "km": 15,
+        "snelste": "1:45:00",
+        "langzaamste": "2:07:30",
+        "eerste": "11:24",
+        "laatste": "11:46"
+      },
+      {
+        "wave": 4,
+        "km": 16,
+        "snelste": "1:52:00",
+        "langzaamste": "2:16:00",
+        "eerste": "11:31",
+        "laatste": "11:55"
+      },
+      {
+        "wave": 4,
+        "km": 17,
+        "snelste": "1:59:00",
+        "langzaamste": "2:24:30",
+        "eerste": "11:38",
+        "laatste": "12:03"
+      },
+      {
+        "wave": 4,
+        "km": 18,
+        "snelste": "2:06:00",
+        "langzaamste": "2:33:00",
+        "eerste": "11:45",
+        "laatste": "12:12"
+      },
+      {
+        "wave": 4,
+        "km": 19,
+        "snelste": "2:13:00",
+        "langzaamste": "2:41:30",
+        "eerste": "11:52",
+        "laatste": "12:20"
+      },
+      {
+        "wave": 4,
+        "km": 20,
+        "snelste": "2:20:00",
+        "langzaamste": "2:50:00",
+        "eerste": "11:59",
+        "laatste": "12:29"
+      },
+      {
+        "wave": 4,
+        "km": 21,
+        "snelste": "2:27:00",
+        "langzaamste": "2:58:30",
+        "eerste": "12:06",
+        "laatste": "12:37"
+      },
+      {
+        "wave": 4,
+        "km": 21.1,
+        "snelste": "2:27:41",
+        "langzaamste": "2:59:19",
+        "eerste": "12:06",
+        "laatste": "12:38"
+      },
+      {
+        "wave": 5,
+        "km": 1,
+        "snelste": "0:07:00",
+        "langzaamste": "0:08:30",
+        "eerste": "9:49",
+        "laatste": "9:50"
+      },
+      {
+        "wave": 5,
+        "km": 2,
+        "snelste": "0:14:00",
+        "langzaamste": "0:17:00",
+        "eerste": "9:56",
+        "laatste": "9:59"
+      },
+      {
+        "wave": 5,
+        "km": 3,
+        "snelste": "0:21:00",
+        "langzaamste": "0:25:30",
+        "eerste": "10:03",
+        "laatste": "10:07"
+      },
+      {
+        "wave": 5,
+        "km": 4,
+        "snelste": "0:28:00",
+        "langzaamste": "0:34:00",
+        "eerste": "10:10",
+        "laatste": "10:13"
+      },
+      {
+        "wave": 5,
+        "km": 5,
+        "snelste": "0:35:00",
+        "langzaamste": "0:42:30",
+        "eerste": "10:17",
+        "laatste": "10:24"
+      },
+      {
+        "wave": 5,
+        "km": 6,
+        "snelste": "0:42:00",
+        "langzaamste": "0:51:00",
+        "eerste": "10:24",
+        "laatste": "10:33"
+      },
+      {
+        "wave": 5,
+        "km": 7,
+        "snelste": "0:49:00",
+        "langzaamste": "0:59:30",
+        "eerste": "10:31",
+        "laatste": "10:41"
+      },
+      {
+        "wave": 5,
+        "km": 8,
+        "snelste": "0:56:00",
+        "langzaamste": "1:08:00",
+        "eerste": "10:38",
+        "laatste": "10:50"
+      },
+      {
+        "wave": 5,
+        "km": 9,
+        "snelste": "1:03:00",
+        "langzaamste": "1:16:30",
+        "eerste": "10:45",
+        "laatste": "10:58"
+      },
+      {
+        "wave": 5,
+        "km": 10,
+        "snelste": "1:10:00",
+        "langzaamste": "1:25:00",
+        "eerste": "10:52",
+        "laatste": "11:07"
+      },
+      {
+        "wave": 5,
+        "km": 11,
+        "snelste": "1:17:00",
+        "langzaamste": "1:33:00",
+        "eerste": "10:59",
+        "laatste": "11:15"
+      },
+      {
+        "wave": 5,
+        "km": 12,
+        "snelste": "1:24:00",
+        "langzaamste": "1:42:00",
+        "eerste": "11:06",
+        "laatste": "11:24"
+      },
+      {
+        "wave": 5,
+        "km": 13,
+        "snelste": "1:31:00",
+        "langzaamste": "1:50:30",
+        "eerste": "11:13",
+        "laatste": "11:32"
+      },
+      {
+        "wave": 5,
+        "km": 14,
+        "snelste": "1:38:00",
+        "langzaamste": "1:59:00",
+        "eerste": "11:20",
+        "laatste": "11:41"
+      },
+      {
+        "wave": 5,
+        "km": 15,
+        "snelste": "1:45:00",
+        "langzaamste": "2:07:30",
+        "eerste": "11:27",
+        "laatste": "11:49"
+      },
+      {
+        "wave": 5,
+        "km": 16,
+        "snelste": "1:52:00",
+        "langzaamste": "2:16:00",
+        "eerste": "11:34",
+        "laatste": "11:58"
+      },
+      {
+        "wave": 5,
+        "km": 17,
+        "snelste": "1:59:00",
+        "langzaamste": "2:24:30",
+        "eerste": "11:41",
+        "laatste": "12:06"
+      },
+      {
+        "wave": 5,
+        "km": 18,
+        "snelste": "2:06:00",
+        "langzaamste": "2:33:00",
+        "eerste": "11:48",
+        "laatste": "12:15"
+      },
+      {
+        "wave": 5,
+        "km": 19,
+        "snelste": "2:13:00",
+        "langzaamste": "2:41:30",
+        "eerste": "11:55",
+        "laatste": "12:23"
+      },
+      {
+        "wave": 5,
+        "km": 20,
+        "snelste": "2:20:00",
+        "langzaamste": "2:50:00",
+        "eerste": "12:02",
+        "laatste": "12:32"
+      },
+      {
+        "wave": 5,
+        "km": 21,
+        "snelste": "2:27:00",
+        "langzaamste": "2:58:30",
+        "eerste": "12:09",
+        "laatste": "12:40"
+      },
+      {
+        "wave": 5,
+        "km": 21.1,
+        "snelste": "2:27:41",
+        "langzaamste": "2:59:19",
+        "eerste": "12:09",
+        "laatste": "12:41"
+      }
+    ],
+    "hardlopen_5km": [
+      {
+        "wave": 1,
+        "km": 1,
+        "snelste": "0:03:24",
+        "langzaamste": "0:05:30",
+        "eerste": "12:33",
+        "laatste": "12:35"
+      },
+      {
+        "wave": 1,
+        "km": 2,
+        "snelste": "0:06:48",
+        "langzaamste": "0:11:00",
+        "eerste": "12:36",
+        "laatste": "12:41"
+      },
+      {
+        "wave": 1,
+        "km": 3,
+        "snelste": "0:10:12",
+        "langzaamste": "0:16:30",
+        "eerste": "12:40",
+        "laatste": "12:46"
+      },
+      {
+        "wave": 1,
+        "km": 4,
+        "snelste": "0:13:36",
+        "langzaamste": "0:22:00",
+        "eerste": "12:43",
+        "laatste": "12:52"
+      },
+      {
+        "wave": 1,
+        "km": 5,
+        "snelste": "0:17:00",
+        "langzaamste": "0:27:30",
+        "eerste": "12:47",
+        "laatste": "12:57"
+      },
+      {
+        "wave": 2,
+        "km": 1,
+        "snelste": "0:05:15",
+        "langzaamste": "0:06:15",
+        "eerste": "12:40",
+        "laatste": "12:41"
+      },
+      {
+        "wave": 2,
+        "km": 2,
+        "snelste": "0:10:30",
+        "langzaamste": "0:12:00",
+        "eerste": "12:45",
+        "laatste": "12:47"
+      },
+      {
+        "wave": 2,
+        "km": 3,
+        "snelste": "0:15:45",
+        "langzaamste": "0:18:45",
+        "eerste": "12:50",
+        "laatste": "12:53"
+      },
+      {
+        "wave": 2,
+        "km": 4,
+        "snelste": "0:21:00",
+        "langzaamste": "0:25:00",
+        "eerste": "12:56",
+        "laatste": "13:00"
+      },
+      {
+        "wave": 2,
+        "km": 5,
+        "snelste": "0:26:15",
+        "langzaamste": "0:31:15",
+        "eerste": "13:01",
+        "laatste": "13:06"
+      },
+      {
+        "wave": 3,
+        "km": 1,
+        "snelste": "0:06:00",
+        "langzaamste": "0:07:00",
+        "eerste": "12:46",
+        "laatste": "12:47"
+      },
+      {
+        "wave": 3,
+        "km": 2,
+        "snelste": "0:12:00",
+        "langzaamste": "0:14:00",
+        "eerste": "12:52",
+        "laatste": "12:54"
+      },
+      {
+        "wave": 3,
+        "km": 3,
+        "snelste": "0:18:00",
+        "langzaamste": "0:21:00",
+        "eerste": "12:58",
+        "laatste": "13:01"
+      },
+      {
+        "wave": 3,
+        "km": 4,
+        "snelste": "0:24:00",
+        "langzaamste": "0:28:00",
+        "eerste": "13:04",
+        "laatste": "13:08"
+      },
+      {
+        "wave": 3,
+        "km": 5,
+        "snelste": "0:30:00",
+        "langzaamste": "0:35:00",
+        "eerste": "13:10",
+        "laatste": "13:15"
+      },
+      {
+        "wave": 4,
+        "km": 1,
+        "snelste": "0:07:00",
+        "langzaamste": "0:08:00",
+        "eerste": "12:52",
+        "laatste": "12:53"
+      },
+      {
+        "wave": 4,
+        "km": 2,
+        "snelste": "0:14:00",
+        "langzaamste": "0:16:00",
+        "eerste": "12:59",
+        "laatste": "13:01"
+      },
+      {
+        "wave": 4,
+        "km": 3,
+        "snelste": "0:21:00",
+        "langzaamste": "0:24:00",
+        "eerste": "13:06",
+        "laatste": "13:09"
+      },
+      {
+        "wave": 4,
+        "km": 4,
+        "snelste": "0:28:00",
+        "langzaamste": "0:32:00",
+        "eerste": "13:13",
+        "laatste": "13:17"
+      },
+      {
+        "wave": 4,
+        "km": 5,
+        "snelste": "0:35:00",
+        "langzaamste": "0:40:00",
+        "eerste": "13:20",
+        "laatste": "13:25"
+      },
+      {
+        "wave": 5,
+        "km": 1,
+        "snelste": "0:08:00",
+        "langzaamste": "0:09:00",
+        "eerste": "12:58",
+        "laatste": "12:59"
+      },
+      {
+        "wave": 5,
+        "km": 2,
+        "snelste": "0:16:00",
+        "langzaamste": "0:18:00",
+        "eerste": "13:06",
+        "laatste": "13:08"
+      },
+      {
+        "wave": 5,
+        "km": 3,
+        "snelste": "0:24:00",
+        "langzaamste": "0:27:00",
+        "eerste": "13:14",
+        "laatste": "13:17"
+      },
+      {
+        "wave": 5,
+        "km": 4,
+        "snelste": "0:32:00",
+        "langzaamste": "0:36:00",
+        "eerste": "13:22",
+        "laatste": "13:26"
+      },
+      {
+        "wave": 5,
+        "km": 5,
+        "snelste": "0:40:00",
+        "langzaamste": "0:45:00",
+        "eerste": "13:30",
+        "laatste": "13:35"
+      },
+      {
+        "wave": 6,
+        "km": 1,
+        "snelste": "0:09:00",
+        "langzaamste": "0:10:00",
+        "eerste": "13:04",
+        "laatste": "13:05"
+      },
+      {
+        "wave": 6,
+        "km": 2,
+        "snelste": "0:18:00",
+        "langzaamste": "0:20:00",
+        "eerste": "13:13",
+        "laatste": "13:15"
+      },
+      {
+        "wave": 6,
+        "km": 3,
+        "snelste": "0:27:00",
+        "langzaamste": "0:30:00",
+        "eerste": "13:22",
+        "laatste": "13:25"
+      },
+      {
+        "wave": 6,
+        "km": 4,
+        "snelste": "0:36:00",
+        "langzaamste": "0:40:00",
+        "eerste": "13:31",
+        "laatste": "13:35"
+      },
+      {
+        "wave": 6,
+        "km": 5,
+        "snelste": "0:45:00",
+        "langzaamste": "0:50:00",
+        "eerste": "13:40",
+        "laatste": "13:45"
+      }
+    ],
+    "hardlopen_10km": [
+      {
+        "wave": 1,
+        "km": 1,
+        "snelste": "0:03:12",
+        "langzaamste": "0:04:30",
+        "eerste": "13:33",
+        "laatste": "13:34"
+      },
+      {
+        "wave": 1,
+        "km": 2,
+        "snelste": "0:06:24",
+        "langzaamste": "0:09:00",
+        "eerste": "13:36",
+        "laatste": "13:39"
+      },
+      {
+        "wave": 1,
+        "km": 3,
+        "snelste": "0:09:36",
+        "langzaamste": "0:13:30",
+        "eerste": "13:39",
+        "laatste": "13:43"
+      },
+      {
+        "wave": 1,
+        "km": 4,
+        "snelste": "0:12:48",
+        "langzaamste": "0:18:00",
+        "eerste": "13:42",
+        "laatste": "13:48"
+      },
+      {
+        "wave": 1,
+        "km": 5,
+        "snelste": "0:16:00",
+        "langzaamste": "0:22:30",
+        "eerste": "13:46",
+        "laatste": "13:52"
+      },
+      {
+        "wave": 1,
+        "km": 6,
+        "snelste": "0:19:12",
+        "langzaamste": "0:27:00",
+        "eerste": "13:49",
+        "laatste": "13:57"
+      },
+      {
+        "wave": 1,
+        "km": 7,
+        "snelste": "0:22:24",
+        "langzaamste": "0:31:30",
+        "eerste": "13:52",
+        "laatste": "14:01"
+      },
+      {
+        "wave": 1,
+        "km": 8,
+        "snelste": "0:25:36",
+        "langzaamste": "0:36:00",
+        "eerste": "13:55",
+        "laatste": "14:06"
+      },
+      {
+        "wave": 1,
+        "km": 9,
+        "snelste": "0:28:48",
+        "langzaamste": "0:40:30",
+        "eerste": "13:58",
+        "laatste": "14:10"
+      },
+      {
+        "wave": 1,
+        "km": 10,
+        "snelste": "0:32:00",
+        "langzaamste": "0:45:00",
+        "eerste": "14:02",
+        "laatste": "14:15"
+      },
+      {
+        "wave": 2,
+        "km": 1,
+        "snelste": "0:04:15",
+        "langzaamste": "0:05:30",
+        "eerste": "13:39",
+        "laatste": "13:40"
+      },
+      {
+        "wave": 2,
+        "km": 2,
+        "snelste": "0:08:30",
+        "langzaamste": "0:11:00",
+        "eerste": "13:43",
+        "laatste": "13:46"
+      },
+      {
+        "wave": 2,
+        "km": 3,
+        "snelste": "0:12:45",
+        "langzaamste": "0:16:30",
+        "eerste": "13:47",
+        "laatste": "13:51"
+      },
+      {
+        "wave": 2,
+        "km": 4,
+        "snelste": "0:17:00",
+        "langzaamste": "0:22:00",
+        "eerste": "13:52",
+        "laatste": "13:57"
+      },
+      {
+        "wave": 2,
+        "km": 5,
+        "snelste": "0:21:15",
+        "langzaamste": "0:27:30",
+        "eerste": "13:56",
+        "laatste": "14:02"
+      },
+      {
+        "wave": 2,
+        "km": 6,
+        "snelste": "0:25:30",
+        "langzaamste": "0:33:00",
+        "eerste": "14:00",
+        "laatste": "14:08"
+      },
+      {
+        "wave": 2,
+        "km": 7,
+        "snelste": "0:29:45",
+        "langzaamste": "0:38:30",
+        "eerste": "14:04",
+        "laatste": "14:13"
+      },
+      {
+        "wave": 2,
+        "km": 8,
+        "snelste": "0:34:00",
+        "langzaamste": "0:44:00",
+        "eerste": "14:09",
+        "laatste": "14:19"
+      },
+      {
+        "wave": 2,
+        "km": 9,
+        "snelste": "0:38:15",
+        "langzaamste": "0:49:30",
+        "eerste": "14:13",
+        "laatste": "14:24"
+      },
+      {
+        "wave": 2,
+        "km": 10,
+        "snelste": "0:42:30",
+        "langzaamste": "0:55:00",
+        "eerste": "14:17",
+        "laatste": "14:30"
+      },
+      {
+        "wave": 3,
+        "km": 1,
+        "snelste": "0:05:15",
+        "langzaamste": "0:06:15",
+        "eerste": "13:45",
+        "laatste": "13:46"
+      },
+      {
+        "wave": 3,
+        "km": 2,
+        "snelste": "0:10:30",
+        "langzaamste": "0:12:30",
+        "eerste": "13:50",
+        "laatste": "13:52"
+      },
+      {
+        "wave": 3,
+        "km": 3,
+        "snelste": "0:15:45",
+        "langzaamste": "0:18:45",
+        "eerste": "13:55",
+        "laatste": "13:58"
+      },
+      {
+        "wave": 3,
+        "km": 4,
+        "snelste": "0:21:00",
+        "langzaamste": "0:25:00",
+        "eerste": "14:01",
+        "laatste": "14:05"
+      },
+      {
+        "wave": 3,
+        "km": 5,
+        "snelste": "0:26:15",
+        "langzaamste": "0:31:15",
+        "eerste": "14:06",
+        "laatste": "14:11"
+      },
+      {
+        "wave": 3,
+        "km": 6,
+        "snelste": "0:31:30",
+        "langzaamste": "0:37:30",
+        "eerste": "14:11",
+        "laatste": "14:17"
+      },
+      {
+        "wave": 3,
+        "km": 7,
+        "snelste": "0:36:45",
+        "langzaamste": "0:43:45",
+        "eerste": "14:16",
+        "laatste": "14:23"
+      },
+      {
+        "wave": 3,
+        "km": 8,
+        "snelste": "0:42:00",
+        "langzaamste": "0:50:00",
+        "eerste": "14:22",
+        "laatste": "14:30"
+      },
+      {
+        "wave": 3,
+        "km": 9,
+        "snelste": "0:47:15",
+        "langzaamste": "0:56:15",
+        "eerste": "14:27",
+        "laatste": "14:36"
+      },
+      {
+        "wave": 3,
+        "km": 10,
+        "snelste": "0:52:30",
+        "langzaamste": "1:02:30",
+        "eerste": "14:32",
+        "laatste": "14:42"
+      },
+      {
+        "wave": 4,
+        "km": 1,
+        "snelste": "0:06:00",
+        "langzaamste": "0:07:15",
+        "eerste": "13:51",
+        "laatste": "13:52"
+      },
+      {
+        "wave": 4,
+        "km": 2,
+        "snelste": "0:12:00",
+        "langzaamste": "0:14:30",
+        "eerste": "13:57",
+        "laatste": "13:59"
+      },
+      {
+        "wave": 4,
+        "km": 3,
+        "snelste": "0:18:00",
+        "langzaamste": "0:21:45",
+        "eerste": "14:03",
+        "laatste": "14:06"
+      },
+      {
+        "wave": 4,
+        "km": 4,
+        "snelste": "0:24:00",
+        "langzaamste": "0:29:00",
+        "eerste": "14:09",
+        "laatste": "14:14"
+      },
+      {
+        "wave": 4,
+        "km": 5,
+        "snelste": "0:30:00",
+        "langzaamste": "0:36:15",
+        "eerste": "14:15",
+        "laatste": "14:21"
+      },
+      {
+        "wave": 4,
+        "km": 6,
+        "snelste": "0:36:00",
+        "langzaamste": "0:43:30",
+        "eerste": "14:21",
+        "laatste": "14:28"
+      },
+      {
+        "wave": 4,
+        "km": 7,
+        "snelste": "0:42:00",
+        "langzaamste": "0:50:45",
+        "eerste": "14:27",
+        "laatste": "14:35"
+      },
+      {
+        "wave": 4,
+        "km": 8,
+        "snelste": "0:48:00",
+        "langzaamste": "0:58:00",
+        "eerste": "14:33",
+        "laatste": "14:43"
+      },
+      {
+        "wave": 4,
+        "km": 9,
+        "snelste": "0:54:00",
+        "langzaamste": "1:05:15",
+        "eerste": "14:39",
+        "laatste": "14:50"
+      },
+      {
+        "wave": 4,
+        "km": 10,
+        "snelste": "1:00:00",
+        "langzaamste": "1:12:30",
+        "eerste": "14:45",
+        "laatste": "14:57"
+      },
+      {
+        "wave": 5,
+        "km": 1,
+        "snelste": "0:07:00",
+        "langzaamste": "0:08:15",
+        "eerste": "13:57",
+        "laatste": "13:58"
+      },
+      {
+        "wave": 5,
+        "km": 2,
+        "snelste": "0:14:00",
+        "langzaamste": "0:16:30",
+        "eerste": "14:04",
+        "laatste": "14:06"
+      },
+      {
+        "wave": 5,
+        "km": 3,
+        "snelste": "0:21:00",
+        "langzaamste": "0:24:45",
+        "eerste": "14:11",
+        "laatste": "14:14"
+      },
+      {
+        "wave": 5,
+        "km": 4,
+        "snelste": "0:28:00",
+        "langzaamste": "0:33:00",
+        "eerste": "14:18",
+        "laatste": "14:23"
+      },
+      {
+        "wave": 5,
+        "km": 5,
+        "snelste": "0:35:00",
+        "langzaamste": "0:41:15",
+        "eerste": "14:25",
+        "laatste": "14:31"
+      },
+      {
+        "wave": 5,
+        "km": 6,
+        "snelste": "0:42:00",
+        "langzaamste": "0:49:30",
+        "eerste": "14:32",
+        "laatste": "14:39"
+      },
+      {
+        "wave": 5,
+        "km": 7,
+        "snelste": "0:49:00",
+        "langzaamste": "0:57:45",
+        "eerste": "14:39",
+        "laatste": "14:47"
+      },
+      {
+        "wave": 5,
+        "km": 8,
+        "snelste": "0:56:00",
+        "langzaamste": "1:06:00",
+        "eerste": "14:46",
+        "laatste": "14:56"
+      },
+      {
+        "wave": 5,
+        "km": 9,
+        "snelste": "1:03:00",
+        "langzaamste": "1:14:15",
+        "eerste": "14:53",
+        "laatste": "15:04"
+      },
+      {
+        "wave": 5,
+        "km": 10,
+        "snelste": "1:10:00",
+        "langzaamste": "1:22:30",
+        "eerste": "15:00",
+        "laatste": "15:12"
+      },
+      {
+        "wave": 6,
+        "km": 1,
+        "snelste": "0:08:00",
+        "langzaamste": "0:09:00",
+        "eerste": "14:03",
+        "laatste": "14:04"
+      },
+      {
+        "wave": 6,
+        "km": 2,
+        "snelste": "0:16:00",
+        "langzaamste": "0:18:00",
+        "eerste": "14:11",
+        "laatste": "14:13"
+      },
+      {
+        "wave": 6,
+        "km": 3,
+        "snelste": "0:24:00",
+        "langzaamste": "0:27:00",
+        "eerste": "14:19",
+        "laatste": "14:22"
+      },
+      {
+        "wave": 6,
+        "km": 4,
+        "snelste": "0:32:00",
+        "langzaamste": "0:36:00",
+        "eerste": "14:27",
+        "laatste": "14:31"
+      },
+      {
+        "wave": 6,
+        "km": 5,
+        "snelste": "0:40:00",
+        "langzaamste": "0:45:00",
+        "eerste": "14:35",
+        "laatste": "14:40"
+      },
+      {
+        "wave": 6,
+        "km": 6,
+        "snelste": "0:48:00",
+        "langzaamste": "0:54:00",
+        "eerste": "14:43",
+        "laatste": "14:49"
+      },
+      {
+        "wave": 6,
+        "km": 7,
+        "snelste": "0:56:00",
+        "langzaamste": "1:03:00",
+        "eerste": "14:51",
+        "laatste": "14:58"
+      },
+      {
+        "wave": 6,
+        "km": 8,
+        "snelste": "1:04:00",
+        "langzaamste": "1:12:00",
+        "eerste": "14:59",
+        "laatste": "15:07"
+      },
+      {
+        "wave": 6,
+        "km": 9,
+        "snelste": "1:12:00",
+        "langzaamste": "1:21:00",
+        "eerste": "15:07",
+        "laatste": "15:16"
+      },
+      {
+        "wave": 6,
+        "km": 10,
+        "snelste": "1:20:00",
+        "langzaamste": "1:30:00",
+        "eerste": "15:15",
+        "laatste": "15:25"
+      }
+    ],
+    "kidsrun_1km": [
+      {
+        "wave": 1,
+        "km": 1,
+        "snelste": "0:03:36",
+        "langzaamste": "0:08:00",
+        "eerste": "9:18",
+        "laatste": "9:23"
+      },
+      {
+        "wave": 2,
+        "km": 1,
+        "snelste": "0:04:30",
+        "langzaamste": "0:10:00",
+        "eerste": "9:20",
+        "laatste": "9:26"
+      },
+      {
+        "wave": 3,
+        "km": 1,
+        "snelste": "0:05:00",
+        "langzaamste": "0:10:00",
+        "eerste": "9:22",
+        "laatste": "9:27"
+      }
+    ],
+    "kidsrun_2_5km": [
+      {
+        "wave": 1,
+        "km": 1,
+        "snelste": "0:03:36",
+        "langzaamste": "0:10:00",
+        "eerste": "10:03",
+        "laatste": "10:10"
+      },
+      {
+        "wave": 1,
+        "km": 2,
+        "snelste": "0:07:12",
+        "langzaamste": "0:20:00",
+        "eerste": "10:07",
+        "laatste": "10:20"
+      },
+      {
+        "wave": 1,
+        "km": 2.5,
+        "snelste": "0:09:00",
+        "langzaamste": "0:25:00",
+        "eerste": "10:09",
+        "laatste": "10:25"
+      },
+      {
+        "wave": 2,
+        "km": 1,
+        "snelste": "0:03:36",
+        "langzaamste": "0:10:00",
+        "eerste": "10:03",
+        "laatste": "10:10"
+      },
+      {
+        "wave": 2,
+        "km": 2,
+        "snelste": "0:07:12",
+        "langzaamste": "0:20:00",
+        "eerste": "10:07",
+        "laatste": "10:20"
+      },
+      {
+        "wave": 2,
+        "km": 2.5,
+        "snelste": "0:09:00",
+        "langzaamste": "0:25:00",
+        "eerste": "10:09",
+        "laatste": "10:25"
+      }
+    ]
+  },
+  "athletes": [],
+  "routes": [],
+  "texts": [],
+  "people": [],
+  "suppliers": []
+}

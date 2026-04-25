@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LL26 — Entertainment CMS</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; max-width: 80ch; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }
+    h1 { border-bottom: 2px solid #000; padding-bottom: 0.3rem; }
+    h2 { margin-top: 2rem; border-bottom: 1px solid #ccc; padding-bottom: 0.2rem; }
+    h3 { margin-top: 1.2rem; }
+    .meta { color: #666; font-size: 0.9rem; }
+    .item { padding: 0.5rem 0; border-bottom: 1px dashed #ddd; }
+    .item:last-child { border-bottom: none; }
+    .label { color: #888; display: inline-block; min-width: 8rem; }
+    .error { background: #fee; border: 2px solid #c00; padding: 1rem; }
+    .error pre { white-space: pre-wrap; word-break: break-word; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
+    th, td { border: 1px solid #ccc; padding: 0.3rem 0.5rem; text-align: left; }
+    th { background: #f0f0f0; }
+    code { background: #f0f0f0; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+
+  <div id="status">Bezig met laden van data.json...</div>
+  <div id="content"></div>
+
+  <script>
+    // Eerst-aller-eerst zichtbaar bewijs dat HTML laadt
+    document.getElementById('status').textContent = 'JavaScript draait. Data ophalen...';
+
+    fetch('./data.json?_=' + Date.now())
+      .then(r => {
+        if (!r.ok) throw new Error('HTTP ' + r.status + ' ' + r.statusText);
+        return r.json();
+      })
+      .then(data => {
+        document.getElementById('status').remove();
+        render(data);
+      })
+      .catch(err => {
+        const status = document.getElementById('status');
+        status.className = 'error';
+        status.innerHTML = '<h2>Fout bij laden</h2><pre>' + err.message + '\n\n' + err.stack + '</pre>';
+      });
+
+    function esc(s) {
+      return String(s == null ? '' : s)
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    function render(data) {
+      const c = document.getElementById('content');
+      const parts = [];
+
+      // ===== HEADER =====
+      const e = data.event || {};
+      parts.push('<h1>' + esc(e.name) + '</h1>');
+      parts.push('<p class="meta">' + esc(e.edition) + ' · ' + esc(e.date) + ' · status: <code>' + esc(e.status) + '</code></p>');
+      if (e.tagline) parts.push('<p><em>' + esc(e.tagline) + '</em></p>');
+
+      // Cijfers
+      if (e.cijfers) {
+        parts.push('<p class="meta">' +
+          esc(e.cijfers.editie_nummer) + 'e editie · ' +
+          esc(e.cijfers.deelnemers_indicatie) + ' deelnemers · ' +
+          esc(e.cijfers.aantal_afstanden) + ' afstanden</p>');
+      }
+
+      // Beschrijving
+      if (e.beschrijving) {
+        parts.push('<p>' + esc(e.beschrijving) + '</p>');
+      }
+
+      // Organisatie
+      if (e.organisatie && e.organisatie.naam) {
+        parts.push('<h3>Organisatie</h3>');
+        parts.push('<p><strong>' + esc(e.organisatie.naam) + '</strong></p>');
+        if (e.organisatie.beschrijving) {
+          parts.push('<p>' + esc(e.organisatie.beschrijving) + '</p>');
+        }
+      }
+
+      // ===== AFSTANDEN =====
+      parts.push('<h2>Afstanden (' + (data.afstanden || []).length + ')</h2>');
+      for (const d of data.afstanden || []) {
+        const tijd = d.starttijd_einde ? d.starttijd + ' – ' + d.starttijd_einde : d.starttijd;
+        parts.push('<div class="item">');
+        parts.push('<strong>' + esc(d.naam) + '</strong> ');
+        parts.push('<span class="meta">(' + esc(d.discipline) + ' · ' + esc(d.afstand_km) + ' km)</span>');
+        parts.push('<br><span class="label">Start:</span> ' + esc(tijd));
+        if (d.aantal_waves) parts.push(' · ' + d.aantal_waves + ' waves');
+        parts.push('<br><span class="label">Van → Naar:</span> ' +
+          esc(idLabel(data.locaties, d.start_locatie)) + ' → ' +
+          esc(idLabel(data.locaties, d.finish_locatie)));
+        if (d.sponsors && d.sponsors.length) {
+          parts.push('<br><span class="label">Sponsor:</span> ' +
+            d.sponsors.map(s => esc(idLabel(data.sponsors, s))).join(', '));
+        }
+        if (d.klassementen && d.klassementen.length) {
+          parts.push('<br><span class="label">Klassementen:</span> ' +
+            d.klassementen.map(k => esc(idLabel(data.klassementen, k))).join(', '));
+        }
+        parts.push('</div>');
+      }
+
+      // ===== LOCATIES =====
+      parts.push('<h2>Locaties (' + (data.locaties || []).length + ')</h2>');
+      for (const l of data.locaties || []) {
+        const tech = l.techniek || {};
+        const techList = [];
+        if (tech.pa) techList.push('PA');
+        if (tech.ledscherm) techList.push('LED');
+        if (tech.microfoons) techList.push(tech.microfoons + ' mic');
+        if (tech.wifi) techList.push('Wifi');
+        const v = l.vaste_bezetting || {};
+
+        parts.push('<div class="item">');
+        parts.push('<strong>' + esc(l.naam) + '</strong> — ' + esc(l.locatie_naam));
+        parts.push(' <span class="meta">(' + esc(l.type) + ')</span>');
+        parts.push('<br><span class="label">Host:</span> ' + esc(v.host || '—'));
+        parts.push('<br><span class="label">DJ:</span> ' + esc(v.dj || '—'));
+        parts.push('<br><span class="label">AV:</span> ' + esc(v.av || '—'));
+        if (techList.length) parts.push('<br><span class="label">Techniek:</span> ' + techList.join(', '));
+        if (l.sponsoren_zichtbaar && l.sponsoren_zichtbaar.length) {
+          parts.push('<br><span class="label">Sponsor zichtbaar:</span> ' +
+            l.sponsoren_zichtbaar.map(s => esc(idLabel(data.sponsors, s))).join(', '));
+        }
+        parts.push('</div>');
+      }
+
+      // ===== SPONSORS =====
+      parts.push('<h2>Sponsors (' + (data.sponsors || []).length + ')</h2>');
+      for (const s of data.sponsors || []) {
+        parts.push('<div class="item">');
+        parts.push('<strong>' + esc(s.naam) + '</strong> ');
+        parts.push('<span class="meta">(' + esc(s.niveau) + ')</span>');
+        if (s.gekoppelde_afstanden && s.gekoppelde_afstanden.length) {
+          parts.push('<br><span class="label">Afstand:</span> ' +
+            s.gekoppelde_afstanden.map(a => esc(idLabel(data.afstanden, a))).join(', '));
+        }
+        if (s.activatie && s.activatie.beschrijving) {
+          parts.push('<br><span class="label">Activatie:</span> ' + esc(s.activatie.beschrijving));
+        }
+        parts.push('</div>');
+      }
+
+      // ===== KLASSEMENTEN =====
+      parts.push('<h2>Klassementen (' + (data.klassementen || []).length + ')</h2>');
+      for (const k of data.klassementen || []) {
+        parts.push('<div class="item">');
+        parts.push('<strong>' + esc(k.naam) + '</strong> ');
+        parts.push('<span class="meta">(' + esc(k.type) + ')</span>');
+        if (k.gekoppelde_afstanden && k.gekoppelde_afstanden.length) {
+          parts.push('<br><span class="label">Afstand:</span> ' +
+            k.gekoppelde_afstanden.map(a => esc(idLabel(data.afstanden, a))).join(', '));
+        }
+        if (k.specifieke_waves) {
+          parts.push('<br><span class="label">Waves:</span> ' + k.specifieke_waves.join(', '));
+        }
+        if (k.beschrijving) parts.push('<br>' + esc(k.beschrijving));
+        parts.push('</div>');
+      }
+
+      // ===== SCHEDULE =====
+      parts.push('<h2>Schedule (' + (data.schedule || []).length + ')</h2>');
+      if (!data.schedule || data.schedule.length === 0) {
+        parts.push('<p class="meta"><em>Nog geen items toegevoegd.</em></p>');
+      } else {
+        for (const item of data.schedule) {
+          parts.push('<div class="item">');
+          parts.push('<code>' + esc(item.time) + '</code> ');
+          parts.push('<strong>' + esc(item.description || item.subtype || item.type) + '</strong>');
+          if (item.location) parts.push(' <span class="meta">@ ' + esc(idLabel(data.locaties, item.location)) + '</span>');
+          if (item.assigned_to && item.assigned_to.length) {
+            parts.push('<br><span class="label">Voor:</span> ' + item.assigned_to.map(esc).join(', '));
+          }
+          parts.push('</div>');
+        }
+      }
+
+      // ===== DOORKOMSTEN =====
+      parts.push('<h2>Doorkomsttijden</h2>');
+      const dk = data.doorkomsten || {};
+      const dkAfstanden = Object.keys(dk);
+      if (dkAfstanden.length === 0) {
+        parts.push('<p class="meta"><em>Geen data.</em></p>');
+      } else {
+        for (const distId of dkAfstanden) {
+          const rows = dk[distId];
+          parts.push('<h3>' + esc(idLabel(data.afstanden, distId)) + ' <span class="meta">(' + rows.length + ' rijen)</span></h3>');
+          parts.push('<table>');
+          parts.push('<tr><th>Wave</th><th>KM</th><th>Snelste</th><th>Langzaamste</th><th>Eerste</th><th>Laatste</th></tr>');
+          // Toon alleen eerste 12 rijen om scherm overzichtelijk te houden
+          const preview = rows.slice(0, 12);
+          for (const r of preview) {
+            parts.push('<tr>' +
+              '<td>' + esc(r.wave) + '</td>' +
+              '<td>' + esc(r.km) + '</td>' +
+              '<td>' + esc(r.snelste) + '</td>' +
+              '<td>' + esc(r.langzaamste) + '</td>' +
+              '<td>' + esc(r.eerste) + '</td>' +
+              '<td>' + esc(r.laatste) + '</td>' +
+              '</tr>');
+          }
+          if (rows.length > 12) {
+            parts.push('<tr><td colspan="6" class="meta"><em>... +' + (rows.length - 12) + ' rijen meer</em></td></tr>');
+          }
+          parts.push('</table>');
+        }
+      }
+
+      // ===== LEGE SECTIES =====
+      parts.push('<h2>Nog leeg</h2>');
+      parts.push('<ul>');
+      parts.push('<li>Atleten: ' + (data.athletes || []).length + ' (max 5 per afstand)</li>');
+      parts.push('<li>Routes: ' + (data.routes || []).length + '</li>');
+      parts.push('<li>Speakerteksten: ' + (data.texts || []).length + '</li>');
+      parts.push('<li>Team-leden (people): ' + (data.people || []).length + '</li>');
+      parts.push('<li>Leveranciers (suppliers): ' + (data.suppliers || []).length + '</li>');
+      parts.push('</ul>');
+
+      c.innerHTML = parts.join('');
+    }
+
+    function idLabel(arr, id) {
+      if (!arr || !id) return id || '—';
+      const found = arr.find(x => x && x.id === id);
+      if (!found) return id;
+      return found.naam || id;
+    }
+  </script>
+</body>
+</html>
